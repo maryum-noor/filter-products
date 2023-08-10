@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    body{
+      height: 100vh;
+      width: 100%;
+      background-color: rgb(240, 239, 243);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    .container{
+      width: 375px;
+      height: 540px;
+      background-color: #ffff;
+      border-radius: 15px;
+      box-shadow: 4px 4px 30px rgba(0,0, 0, 0.06);
+     overflow-y: scroll;
+padding: 20px;
+    }
+    .container::-webkit-scrollbar{
+      display: none;
+    }
+
+    .container form{
+      width: 100%;
+      border-radius: 15px;
+      border: 1px solid rgba(82, 74, 235, 0.06);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+     
+    }
+
+    .container form input{
+      font-size: 16px;
+      padding: 8px 10px;
+      width: 100%;
+      border-radius: 15px;
+     box-shadow: none;
+     font-weight: 600;
+      border: none;
+      outline: none;
+    }
+    .container form i{
+      padding-left: 8px;
+    }
+    .product-list{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding-bottom: 15px;
+    }
+    .product-list img{
+      height: 70px;
+      width: 70px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+    .product-list .p-text{
+      padding-left:12px ;
+    }
+    .product-list .p-text h2{
+      font-size: 20px;
+      color: #1d1d1d;
+    }
+    .product-list .p-text h3{
+      font-size: 18px;
+      color: #1d1d1d;
+    }
+    .products{
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+<form>    <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="text" value="" placeholder="Search" onkeyup="search()" id="search-item"></form>
+
+<div class="products"  id="products">
+  <div class="product-list">
+    <img src="Isolated_white_t-shirt_front.jpg"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+
+  <div class="product-list">
+    <img src="s-1.avif"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+
+  <div class="product-list">
+    <img src="s2.avif"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+
+  <div class="product-list">
+    <img src="s3.avif"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+
+  <div class="product-list">
+    <img src="s4.avif"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+  <div class="product-list">
+    <img src="shoe1.jpg"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+  <div class="product-list">
+    <img src="shoe2.jpg"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+  <div class="product-list">
+    <img src="shoe3.jpg"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+  <div class="product-list">
+    <img src="j1.jpg"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+  <div class="product-list">
+    <img src="j2.jpg"  alt="">
+  <div class="p-text">
+    <h2>TShirt with black color</h2>
+    <h3>$35</h3>
+  </div>
+  </div>
+</div>
+  
+  </section>
+
+  <script>
+    const search = ()=>{
+
+      const searchBox =document.getElementById("search-item").value .toUpperCase();
+      const storeItem =document.getElementById("products");
+      const product =document.querySelectorAll(".product-list");
+      const pName=document.getElementsByTagName("h2")
+    }
+
+  </script>
+  
+</body>
+</html>
